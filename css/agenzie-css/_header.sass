@@ -1,0 +1,208 @@
+@import '_variables'
+
+#header
+  height: 50px
+  width: 100%
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  z-index: 5
+  transition: all 150ms ease-in-out
+  background: #00a3e2
+  background: linear-gradient(135deg, rgba(0, 163, 226, 1) 0, rgba(0, 163, 226, 1) 50%, rgba(122, 234, 110, 1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3e2', endColorstr='#b4ec51', GradientType=1 )
+  display: flex
+  justify-content: center
+  transition: top 0.3s
+  @media (max-width:$smartphone)
+    height: 45px
+  .header-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    .logo
+      img
+        width: 150px
+        height: auto
+        @media (max-width:$smartphone)
+          width: 120px
+
+#hero
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .hero-main
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    .background
+      background: url(../../images/agenzie-img/wall.svg)
+      width: 100%
+      height: 94vh
+      display: flex
+      justify-content: center
+      align-items: center
+      background-size: cover
+      background-position: 60% 0px
+      background-repeat: no-repeat
+      position: relative
+      @media (max-width: $smartphone)
+        height: 420px
+      @media (min-width: 575.99px) and (max-width: $tablet)
+        height: 55vh
+      @media (min-width: 767.99px) and (max-width: $tablet-pro)
+        height: 75vh
+      .payoff  
+        position: absolute
+        z-index: 2
+        top: 110px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .text
+          h1
+            color: $white
+            font-size: 55px
+            padding: 0
+            margin: 10px 0 0
+            text-align: center
+            @media (min-width: 767.99px) and (max-width: $tablet-pro)
+              font-size: 45px
+            @media (max-width: $tablet)
+              display: none
+          h2
+            color: $white
+            font-size: 61px
+            padding: 0
+            margin: 0
+            text-align: center
+            font-weight: 400
+            @media (min-width: 767.99px) and (max-width: $tablet-pro)
+              font-size: 51px
+            @media (max-width: $tablet)
+              display: none
+        .text-mobile
+          @media (max-width: $smartphone)
+            margin-top: -40px
+          h1
+            color: $white
+            font-size: 23px
+            padding: 0
+            margin: 10px 0 0
+            text-align: center
+            @media (min-width: 575.99px) and (max-width: 767.98px)
+              font-size: 33px
+            @media (min-width: 767.99px)
+              display: none
+          h2
+            color: $white
+            font-size: 25px
+            padding: 0
+            margin: 0
+            text-align: center
+            font-weight: 400
+            @media (min-width: 575.99px) and (max-width: 767.98px)
+              font-size: 35px
+            @media (min-width: 767.99px)
+              display: none      
+      .guy
+        position: absolute
+        width: 380px
+        bottom: -50px
+        z-index: 3
+        right: 160px
+        @media (max-width: $tablet)
+          width: 160px
+          right: 0px
+          bottom: 20px
+        @media (min-width: 767.99px) and (max-width: $tablet-pro)
+          width: 280px
+          bottom: 0px
+          right: 0px
+      .main-suv
+        position: absolute
+        bottom: -120px
+        z-index: 2
+        right: 50%
+        margin-right: -250px
+        @media (max-width: $tablet)
+          display: none
+        @media (min-width: 767.99px) and (max-width: $tablet-pro)
+          margin-right: -150px
+          bottom: 0px
+        .suv
+          width: 700px
+          @media (min-width: 767.99px) and (max-width: $tablet-pro)
+            width: 440px
+      .main-suv-mobile
+        margin-right: -120px
+        bottom: 10px
+        position: absolute
+        z-index: 2
+        @media (min-width: 767.99px)
+          display: none
+        .suv
+          width: 300px
+          bottom: 0px  
+      .road
+        position: absolute
+        bottom: -50px
+        width: 100%
+        @media (max-width: $tablet)
+          bottom: 20px
+        @media (min-width: 767.99px) and (max-width: $tablet-pro)
+          bottom: 0px
+  .gmc-btn
+    width: 200px
+    height: 44px
+    margin: 10px 0
+    background: $green-gmc
+    text-align: center
+    border-radius: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 290px
+    z-index: 4
+    border: 2px solid $green-gmc
+    @media (max-width: $smartphone)
+      top: 150px
+      width: 150px
+      height: 35px
+    @media (min-width: 575.99px) and (max-width: $tablet)
+      top: 210px
+    span
+      a
+        font-size: 18px
+        font-weight: bold
+        color: $special-blue
+        @media (max-width: $smartphone)
+          font-size: 14px
+    &:hover
+      border: 2px solid $special-blue
+      animation: rotate 0.7s ease-in-out both
+      span
+        animation: storm 0.7s ease-in-out both
+        animation-delay: 0.06s
+        a
+          color: $special-blue
+
+.arrow
+  z-index: 5
+  margin-top: 100px
+  @media (max-width: $smartphone)
+    margin-top: 50px
+  a
+    color: $white
+    opacity: .7
+    font-size: 45px
+    &:hover
+      opacity: 1
+      font-size: 48px
+      animation: rotate 0.9s ease-in-out both    

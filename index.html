@@ -1,0 +1,308 @@
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS  -->
+  <link rel="stylesheet" href="css/agenzie-css/style.css">
+  <link rel="stylesheet" href="css/agenzie-css/form.css">
+  <!-- <link rel="stylesheet" href="css/agenzie-css/check.css"> -->
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- GOOGLE ANALYTICS -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-102009115-1"></script>
+  <script src="js/jquery.min.js"></script>
+  <title>Programma Agenzie</title>
+</head>
+<body>
+
+  <header id="header">
+    <div class="header-wrapper">
+      <div class="logo">
+        <a href="https://getmycar.com/it"><img alt="" src="images/getmycar-white.svg" data-aos="zoom-in-down"></a>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-main">
+      <div class="background">
+        <div class="payoff">
+          <div class="text">
+            <h1 class="tracking-in-expand">SCOPRI IL MONDO GETMYCAR</h1>
+            <h2 class="tracking-in-expand">PER LE AGENZIE DI VIAGGIO</h2>
+          </div>
+          <div class="text-mobile">
+              <h1>SCOPRI IL MONDO GETMYCAR</h1>
+              <h2>PER LE AGENZIE DI VIAGGIO</h2>
+            </div>
+        </div>
+        <div class="arrow fade-in">
+          <div class="bounce">
+            <a class="fa fa-chevron-down fa-2x" href="#copy-only"></a>
+          </div>
+        </div>
+        <img src="images/agenzie-img/guy.png" class="guy fade-in" alt="">
+        <div class="slide-in-right main-suv">
+          <img src="images/agenzie-img/hero-car.png" class="suv" alt="">
+        </div>
+        <div class="main-suv-mobile">
+            <img src="images/agenzie-img/hero-car.png" class="suv" alt="">
+          </div>
+        <img src="images/agenzie-img/road.svg" class="road" alt=""> 
+      </div>
+    </div>
+    <div class="gmc-btn" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="1500">
+      <span>
+        <a href="https://getmycar.com/it" target="_blank">VISITA IL SITO</a>
+      </span>
+    </div>
+    <!-- <div class="arrow bounce">
+      <a class="fa fa-chevron-down fa-2x" href="#copy-only"></a>
+    </div> -->
+  </section>
+
+  <section id="copy-only">
+    <p>
+        <strong>GetMyCar</strong> l’innovativa piattaforma di Car Sharing del Network <br>
+        <strong>ParkinGO</strong> offre un’area dedicata alle<br>
+        <strong>Agenzie di Viaggio</strong>
+      </p>
+  </section>
+
+  <section id="block-section">
+    <h2>
+      SCOPRI I VANTAGGI
+    </h2>
+    <div class="block-main body-wrapper">
+      <div class="block-row">
+        <div class="block block-text block-blue" data-aos="flip-left" data-aos-duration="1000">
+          <h2>PARCHEGGIO + AUTO</h2>
+          <p>
+            Utilizza il Network ParkinGO per <br>
+            prenotare parcheggio e noleggio auto. <br>
+            Bastano pochi click.
+          </p>
+        </div>
+        <div class="block block-img" data-aos="flip-right" data-aos-delay="200" data-aos-duration="1200">
+            <img src="images/agenzie-img/smile.jpg" alt="">
+        </div>
+      </div>
+      <div class="block-row">
+        <div class="block block-img" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
+          <img src="images/agenzie-img/assicurazione.jpg" alt="">
+        </div>
+        <div class="block block-text block-green" data-aos="flip-right" data-aos-delay="600" data-aos-duration="1200">
+          <h2>ASSICURAZIONE GARANTITA</h2>
+          <p>
+              Copertura assicurativa scelta in fase di <br>
+              prenotazione. Nessuna sopresa <br>
+              al banco di noleggio.
+          </p>
+        </div>
+      </div>
+      <div class="block-row">
+          <div class="block block-text block-blue" data-aos="flip-left" data-aos-delay="800" data-aos-duration="1000">
+            <h2>COMMISSIONE SU MISURA</h2>
+            <p>
+              Scegli tu l'importo della tua commissione <br>
+              sul costo del noleggio. Il cliente <br>
+              visualizzerà solo l'importo finale
+            </p>
+          </div>
+          <div class="block block-img" data-aos="flip-right" data-aos-delay="1000" data-aos-duration="1200">
+            <img src="images/agenzie-img/commissione.jpg" alt="">
+          </div>
+        </div>
+    </div>
+  </section> 
+  
+  <section id="form">
+    <div class="block-main body-wrapper">
+      <div class="form-title">
+        <h2 class="compile-form" data-aos="fade-right"
+        data-aos-duration="3000">COMPILA IL FORM 
+            <strong>PER ESSERE
+            RICONTATTATO</strong>      
+        </h2>
+      </div>
+      <div class="form" data-aos="fade-left"
+      data-aos-duration="2500">
+          <div class="content-form">
+            <form name="contactForm" onsubmit="validateForm()" id="wtol">
+              <div class="row">
+                  <label>Nome agenzia
+                    <input type="text" name="name">
+                    <div class="error" id="nameErr"></div>
+                  </label>
+              </div>
+              <div class="row">
+                  <label>Ragione Sociale referente
+                    <input type="text" name="corporate">
+                    <div class="error" id="corporateErr"></div>
+                  </label>
+              </div>
+              <div class="row">
+                  <label>Indirizzo email
+                    <input type="text" name="email">
+                    <div class="error" id="emailErr"></div>
+                  </label>
+              </div>
+              <div class="row">
+                  <label>Numero di telefono
+                    <input type="text" name="mobile" maxlength="10">
+                    <div class="error" id="mobileErr"></div>
+                  </label>
+              </div>
+              <div class="row">
+                  <div class="form-inline">
+                      <label>
+                        <input type="checkbox" name="privacy">Dichiaro di accettare i Termini e le Condizioni e di aver letto la <a href="https://getmycar.com/it/privacy-policy">Privacy policy</a>
+                      </label>
+                  </div>
+                  <div class="error" id="privacyErr"></div>
+              </div>
+              <div class="row">
+                  <input type="submit" value="INVIA" id="subForm">
+                  <span class="loader" style="display: none;">
+                    <img src="css/pro-css/gmc-loader.svg" alt="">
+                  </span>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div> 
+  </section>
+
+  <footer id="footer">
+    <div class="wrapper">
+      <div class="top-footer">
+        <div class="logo">
+          <a href="/it"><img alt="" src="images/getmycar-white.svg"></a>
+        </div>
+        <div class="footer-actions">
+          <a class="mat-raised-button" href="https://getmycar.com/it/inserisci-tua-auto" tabindex="0" aria-disabled="false">Inserisci la tua auto</a>
+          <a class="mat-raised-button" href="https://getmycar.com/it" tabindex="0" aria-disabled="false">Cerca un'auto</a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="support-menu">
+          <div class="support">
+            <div class="support-title">Centro prenotazioni</div>
+            <ul>
+              <li>
+                <a href="tel:+3902050205">
+                <span class="icon">
+                <i class="fa fa-phone"></i>
+                </span>+39 02 050205
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@getmycar.com">
+                <span class="icon">
+                <i class="far fa-envelope"></i>
+                </span> info@getmycar.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="support">
+            <div class="support-title">Servizio Clienti</div>
+            <ul>
+              <li>
+                <a href="mailto:customerservice@getmycar.com" style="white-space: nowrap;"><span class="icon"><i class="far fa-envelope"></i></span> customerservice@getmycar.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/getmycar.it/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/getmycar_sharing/" target="_blank">
+            <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="navigation-menu">
+          <ul>
+            <li><a target="_blank" href="https://getmycar.com/it/come-funziona">Come funziona</a></li>
+            <li><a target="_blank" href="https://getmycar.com/it/termini">Termini del servizio</a></li>
+            <li><a target="_blank" href="https://getmycar.com/it/privacy-policy">Privacy Policy</a></li>
+            <li><a target="_blank" href="https://getmycar.com/rimborso-microsharing-p2p-ics">Rimborso micro car sharing</a></li>
+          </ul>
+        </div>
+        <div class="other-voices">
+          <div class="support-title"> Le Nostre Location </div>
+          <ul class="">
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-bari"> BARI </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-bergamo-orio-al-serio"> BERGAMO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-bologna"> BOLOGNA </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-brindisi"> BRINDISI </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-cagliari"> CAGLIARI </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-cassano-magnago"> CASSANO MAGNAGO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-catania-aeroporto-p2p"> CATANIA </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-firenze-centro"> FIRENZE </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-catania-aeroporto-p2p"> FIRENZE AEROPORTO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-genova"> GENOVA </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-lecce"> LECCE </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-lentatesulseveso"> LENTATE SUL SEVESO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-milano-centrale"> MILANO CENTRALE </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-milano-linate"> MILANO LINATE </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-milano-malpensa"> MILANO MALPENSA </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-olbia"> OLBIA </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-pisa"> PISA </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-roma-centro"> ROMA CENTRO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-roma-ciampino"> ROMA CIAMPINO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-roma-fiumicino"> ROMA FIUMICINO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-roma-termini"> ROMA TERMINI </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-rozzano"> ROZZANO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-seregno"> SEREGNO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-terracina"> TERRACINA </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-treviso"> TREVISO </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-venezia"> VENEZIA </a></li>
+            <li class="slide"><a href="https://getmycar.com/it/noleggio-auto-verona"> VERONA </a></li>
+          </ul>
+        </div>
+        <div class="other-voices">
+          <div class="accepted-payment-methods">
+            <ul>
+              <li><img alt="" src="images/payment-methods/Visa-card.svg"></li>
+              <li><img alt="" src="images/payment-methods/MasterCard-card.svg"></li>
+              <li><img alt="" src="images/payment-methods/AmericanExpress-card.svg"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div>© 2019 GetMyCar, GetMyCar S.r.l. Via F. Filzi, 2, 20124 Milano | Iscritta al Registro delle Imprese di Milano - Monza - Brianza - Lodi</div>
+        <div>C.F. e P. IVA 09937940964 | n. REA MI-27122884 | tel: <a href="tel:+3902050202">02 050202</a> | Capitale Sociale Euro 100.000 | PEC: <a href="mailto:getmycar@legalmail.it">getmycar@legalmail.it</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- HIDE NAVBAR ON VERTICAL SCROLL -->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").style.top = "0";
+      } else {
+        document.getElementById("header").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+  <!-- AOS CDN -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- AOS CUSTOM SETTINGS -->
+  <script src="js/aos-settings.js"></script>
+</body>
+</html>

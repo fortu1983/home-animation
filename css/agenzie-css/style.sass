@@ -1,0 +1,41 @@
+@import '_variables'
+@import '_header'
+@import '_main'
+@import '_footer'
+@import '_keyframes'
+
+// $smartphone: 575.98px
+// $tablet: 767.98px
+// $tablet-pro: 992.98px
+// $desktop: 1199.98px
+// $wide-desktop: 1200px
+
+html
+  scroll-behavior: smooth
+
+body
+  margin: 0px
+  font-family: 'Quicksand', sans-serif
+
+ol, ul
+  list-style: none
+
+a
+  text-decoration: none
+
+::placeholder
+  color: rgba(0, 0, 0, 0.87)
+  opacity: 1
+  font-size: 15px
+  font-weight: 400
+
+*:focus
+  outline: none
+
+.body-wrapper
+  max-width: 1000px
+  margin: 0 auto
+  padding: 0 20px
+  @media (max-width: $tablet-pro)
+    width: 100%
+    padding: 0
